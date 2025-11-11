@@ -14,42 +14,50 @@ class MainApp extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              Text('Hello world!'),
-              Text('la premiere tentative...'),
+              Text(
+                'Hello world!',
+                style: TextStyle(fontSize: 20, color: Colors.deepOrange),
+              ),
+              Text(
+                'la premiere tentative...',
+                style: TextStyle(fontSize: 18, color: Colors.deepOrange),
+              ),
               Container(
-                margin: EdgeInsets.all(20),
-                padding: EdgeInsets.all(16),
+                margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+                padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 255, 157, 127),
+                  color: Colors.deepOrange,
                   borderRadius: BorderRadius.circular(40),
                 ),
                 child: Column(
                   children: [
                     Text(
                       'Boite stylisee avec container',
-                      style: TextStyle(
-                        color: Color.fromARGB(255, 206, 69, 28),
-                        fontSize: 18,
-                      ),
+                      style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     Text(
                       'Un autre texte en orange',
-                      style: TextStyle(
-                        color: Color.fromARGB(255, 206, 69, 28),
-                        fontSize: 16,
-                      ),
+                      style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
                   ],
                 ),
               ),
               Stack(
-                alignment: Alignment.topCenter,
+                alignment: Alignment.center,
                 children: [
                   Container(width: 200, height: 200, color: Colors.blue[100]),
-                  Icon(Icons.star, size: 100, color: Colors.amber),
+                  Icon(
+                    Icons.star_border,
+                    size: 80,
+                    color: Colors.deepOrangeAccent,
+                  ),
                   Text(
                     'Superposé !',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
                   ),
                 ],
               ),
@@ -58,19 +66,29 @@ class MainApp extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Icon(Icons.home, color: Colors.blue, size: 40),
-                  Icon(Icons.star, color: Colors.amber, size: 40),
-                  Icon(Icons.settings, color: Colors.grey, size: 40),
-                  Icon(Icons.favorite, color: Colors.redAccent, size: 40),
+                  Icon(Icons.star, color: Colors.blue, size: 40),
+                  Icon(Icons.settings, color: Colors.blue, size: 40),
+                  Icon(Icons.favorite, color: Colors.blue, size: 40),
                 ],
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text('Titre principal', style: TextStyle(fontSize: 30)),
-                  SizedBox(height: 20),
-                  Text('Développement d applications'),
-                  Icon(Icons.thumb_up, color: Colors.green, size: 40),
+                  Text(
+                    'Titre principal',
+                    style: TextStyle(fontSize: 25, color: Colors.black),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    'Développement d applications',
+                    style: TextStyle(
+                      fontSize: 26,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Icon(Icons.thumb_up, color: Colors.black, size: 30),
                 ],
               ),
             ],
