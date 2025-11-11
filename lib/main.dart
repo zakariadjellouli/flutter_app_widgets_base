@@ -20,12 +20,26 @@ class MainApp extends StatelessWidget {
                 margin: EdgeInsets.all(20),
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: Colors.blueAccent,
-                  borderRadius: BorderRadius.circular(12),
+                  color: Color.fromARGB(255, 255, 157, 127),
+                  borderRadius: BorderRadius.circular(40),
                 ),
-                child: Text(
-                  'boite stylisee avec container',
-                  style: TextStyle(color: Colors.white, fontSize: 18),
+                child: Column(
+                  children: [
+                    Text(
+                      'Boite stylisee avec container',
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 206, 69, 28),
+                        fontSize: 18,
+                      ),
+                    ),
+                    Text(
+                      'Un autre texte en orange',
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 206, 69, 28),
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
