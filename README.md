@@ -11,7 +11,7 @@
 - Étape 7 : Personnaliser l'interface
 - Étape 8 : Tester sur plusieurs environnements
 
-- ##   Widgets Implémentés
+##   Widgets Implémentés
 - **Column** - Disposition verticale principale
 - **Row** - Barre d'icônes horizontale
 - **Stack** - Superposition texte/icône
